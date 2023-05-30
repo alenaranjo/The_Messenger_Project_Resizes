@@ -1,0 +1,370 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+sub,
+sup {
+
+    font-size: 45%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+sup {
+    top: -0.8em;
+
+}
+
+/* ---------------------------------- Styles ---------------------------------- */
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+div,
+img{
+    position: absolute;
+}
+
+#container {
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #d9f6fa;
+    color: white;
+    border: 1px solid #808080;
+}
+
+#tsparticles {
+    left: 0px;
+}
+
+.tsparticles-canvas-el {
+    width: 300px !important;
+    height: 250px !important;
+}
+
+:root{
+    --txt_bgColor: #f3f3f3;
+    --txt_bgYellow: #fef200;
+}
+
+/* ---------------------------------- BACKGROUND ELEMENTS ---------------------------------- */
+
+
+#bg {
+    top: 0px;
+    left: 0px;
+    width: 728px;
+    height: 90px;
+    background-color: #d5d5d5;
+}
+
+/* ---------------------------------- banner Elements ---------------------------------- */
+
+.txt_mask{
+    width: 100%;
+    height: 100%;
+}
+
+.txtBg{
+    width: 100%;
+    height: 100%;
+    background-color:var(--txt_bgYellow);
+}
+
+#txt1_container{
+    width: 350px;
+    height: 38px;
+    top: 23px;
+    left: 100px;
+    background-color:var(--txt_bgColor);
+}
+
+#txt1{
+    width: 337px;
+    height: 33px;
+    top: 5px;
+    left: 8px;
+    background: url('txt1.svg') no-repeat;
+    background-size: contain;
+}
+
+#txt2_container{
+    width: 163px;
+    height: 38px;
+    top: 23px;
+    left: 455px;
+    background-color:var(--txt_bgColor);
+}
+
+#txt2{
+    width: 152px;
+    height: 31px;
+    top: 7px;
+    left: 5px;
+    background: url('txt2.svg') no-repeat;
+    background-size: contain;
+}
+
+#logo_container{
+    width: 519px;
+    height: 36px;
+    top: 28px;
+    left: 50px;
+    /* background-color: rgba(38, 252, 53, 0.4); */
+}
+
+#logo{
+    width: 240px;
+    height: 33px;
+    background: url('logo_text1.svg') no-repeat;
+    background-size: contain;
+}
+
+#logo_txt_container{
+    width: 214px;
+    height: 25px;
+    top: 4px;
+    left: 250px;
+    background-color:var(--txt_bgColor);
+}
+
+#logo_txt{
+    width: 185px;
+    height: 14px;
+    top: 6px;
+    left: 16px;
+    background: url('logo_text2.svg') no-repeat;
+    background-size: contain;
+}
+
+
+
+.shadow{
+  filter: drop-shadow(-2px 3px 0px rgba(89, 44, 130, 0.80));  
+}
+
+
+/* ---------------------------------- END FRAME ELEMENTS ---------------------------------- */
+
+
+#cta {
+    position: absolute;
+    bottom: 33px;
+    right: 55px;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(204, 204, 204, 0), rgba(255, 255, 255, 0.3), rgba(204, 204, 204, 0));
+    background-position: -111px 0;
+    z-index: 2;
+}
+
+#copy_cta {
+    position: relative;
+    width: 76px;
+    height: 10px;
+    top: 0px;
+/*    line-height: 1.5;*/
+    background-image: url(cta_text.svg);
+    background-size: 100% 100%;
+}
+
+/*------------------ JS Switching Classes ------------------- */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline-block;
+}

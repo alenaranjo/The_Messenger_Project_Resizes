@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="ad.size" content="width=300, height=600">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html;charset=windows-1252">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+    <script type="text/javascript">
+        var clickTag = "https://www.someURL.com/";
+
+        function checkGreensockReady() {
+            if (window.TimelineMax) {
+                //console.log('greensockready');
+                startAd();
+            } else {
+                setTimeout(checkGreensockReady, 50);
+            }
+        }
+        window.onload = checkGreensockReady;
+    </script>
+
+</head>
+
+<body>
+
+    <div id="container" style="visibility: hidden;" class="pns" onclick="window.open(window.clickTag)">
+
+
+        <div id="bg"></div>
+
+        <div id="txt1_container">
+            <div class="txt_mask">
+                <div id="txt1"></div>
+            </div>
+        </div>
+
+        <div id="txt2_container">
+            <div class="txt_mask">
+                <div id="txt2"></div>
+            </div>
+        </div>
+
+        <div id="txt3_container">
+            <div class="txtBg"></div>
+            <div class="txt_mask">
+                <div id="txt3"></div>
+            </div>
+        </div>
+
+        <div id="txt4_container">
+            <div class="txtBg"></div>
+            <div class="txt_mask">
+                <div id="txt4"></div>
+            </div>
+        </div>
+
+        <div id="cta">
+            <div id="copy_cta"></div>
+        </div>
+
+        <div id="logo_container">
+            <div id="logo"></div>
+            <div id="logo_txt_container">
+                <div class="txtBg"></div>
+                <div class="txt_mask">
+                    <div id="logo_txt"></div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/gsap.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+
+</body>
+
+</html>
