@@ -38,8 +38,8 @@ function startAd() {
         tl
 
         .add("f2")
-        .to(txt3_container, {duration:.4,  clipPath:'inset(0 0% 0 0)', stagger:.2, ease: "sine.out"}, 'f2+=.4')
-        .to('#txt3_container .txt_mask', {duration:.6,  clipPath:'inset(0 0% 0 0)', stagger:.25, ease: "sine.out"}, 'f2+=.8')
+        .to(txt3_container, {duration:.4,  clipPath:'inset(0 0% 0 0)', stagger:.2, ease: "sine.out"}, 'f2+=0')
+        .to('#txt3_container .txt_mask', {duration:.6,  clipPath:'inset(0 0% 0 0)', stagger:.25, ease: "sine.out"}, 'f2+=.2')
        
         return tl;	
         
@@ -88,7 +88,7 @@ function startAd() {
             tlMain
            .set(container, {visibility: 'visible'})
            .add(frame1(), "+=0")
-           .add(frame2(),"+=.1")
+           .add(frame2(),"+=0")
            .add(frame3(),"+=1")
         
         console.log(tlMain.duration());
